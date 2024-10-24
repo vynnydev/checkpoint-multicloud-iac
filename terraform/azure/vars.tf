@@ -1,7 +1,7 @@
 variable "azurerm_resource_group_name" {
-  default = "rg-staticsite-lb-tf-vinicius"
+  default = "rg-staticsite-tf-vinicius"
 }
 
 variable "azurerm_resource_group_location" {
-  default = "East US"
+  default = "brazilsouth"
 }

@@ -19,7 +19,7 @@ resource "aws_vpc" "vpc20" {
 # SUBNETS
 resource "aws_subnet" "sn_vpc10_pub" {
   vpc_id            = aws_vpc.vpc10.id
-  cidr_block        = "10.0.1.0/24"  # Subnet válida dentro do range da VPC
+  cidr_block        = "10.0.2.0/24"  # Subnet válida dentro do range da VPC
   availability_zone = "us-east-1a"
 
   tags = {
@@ -29,7 +29,7 @@ resource "aws_subnet" "sn_vpc10_pub" {
 
 resource "aws_subnet" "sn_vpc20_priv" {
   vpc_id            = aws_vpc.vpc20.id
-  cidr_block        = "10.0.2.0/24"  # Subnet válida dentro do range da VPC
+  cidr_block        = "10.0.3.0/24"  # Subnet válida dentro do range da VPC
   availability_zone = "us-east-1b"
 
   tags = {
