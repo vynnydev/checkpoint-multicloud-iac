@@ -1,5 +1,5 @@
 resource "aws_vpc" "vpc10" {
-  cidr_block           = "10.0.1.0/16"
+  cidr_block           = "10.0.0.0/16"
   enable_dns_support   = true
   enable_dns_hostnames = true
   tags = {
@@ -8,7 +8,7 @@ resource "aws_vpc" "vpc10" {
 }
 
 resource "aws_vpc" "vpc20" {
-  cidr_block           = "20.0.1.0/16"
+  cidr_block           = "20.0.0.0/16"
   enable_dns_support   = true
   enable_dns_hostnames = true
   tags = {
