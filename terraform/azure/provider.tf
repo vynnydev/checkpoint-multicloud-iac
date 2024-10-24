@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-staticsite-lb-tf-vinicius"
-    storage_account_name = "staticsitelbtfvinicius"
+    resource_group_name  = "rg-staticsite-tf-vinicius"
+    storage_account_name = "staticsitetfvinicius"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
   }
