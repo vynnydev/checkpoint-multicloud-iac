@@ -1,9 +1,3 @@
-# Criando o grupo de recursos
-# resource "azurerm_resource_group" "multicloud" {
-#   name     = "multicloud-resources"
-#   location = "East US"
-# }
-
 # VNet 1
 resource "azurerm_virtual_network" "vnet1" {
   name                = "vnet1"
