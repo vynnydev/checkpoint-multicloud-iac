@@ -1,7 +1,3 @@
-provider "azurerm" {
-  features {}
-}
-
 # Criando o grupo de recursos
 # resource "azurerm_resource_group" "multicloud" {
 #   name     = "multicloud-resources"
@@ -38,7 +34,7 @@ resource "azurerm_subnet" "subnet2" {
   resource_group_name  = var.azurerm_resource_group_name
   virtual_network_name = azurerm_virtual_network.vnet2.name
   address_prefixes     = ["10.1.1.0/24"]
-  
+
   private_endpoint_network_policies = true 
 }
 
